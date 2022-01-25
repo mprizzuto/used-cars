@@ -1,0 +1,15 @@
+* {
+	outline:  2px solid lime;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+a {
+	display: block;
+}

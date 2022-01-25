@@ -1,0 +1,31 @@
+@import "reset.css";
+@import "setup.css";
+@import "typography.css";
+
+
+
+/*push header and footer to bottom of page*/
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+	min-height:  100vh;
+}
+
+/*components*/
+inner-column {
+	display: block;
+}
+
+inner-column {
+	padding:  10px;
+}
+
+/*sections*/
+main {
+	outline:  4px solid red;
+}
+
