@@ -4,4 +4,16 @@ function formatInput(mixed $input):void {
 	var_dump($input);
 	echo "</pre>";
 }
+
 ?>
+
+<?php function createHead($title, $description) {?>
+<head>
+	<title><?=$title?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <meta name="description" content="<?=$description?>">
+</head>
+<?php }?>
+
