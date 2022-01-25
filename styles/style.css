@@ -8,6 +8,7 @@
 body {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 10vh;
 }
 
 main {
@@ -22,10 +23,21 @@ inner-column {
 
 inner-column {
 	padding:  10px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 700px;
+	line-height: 1.6;
 }
 
 /*sections*/
 main {
-	outline:  4px solid red;
+}
+
+main inner-column {
+	border-top:  4px solid red;
+}
+
+footer inner-column {
+	border-top: 4px solid red;
 }
 
