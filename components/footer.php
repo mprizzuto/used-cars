@@ -1,7 +1,7 @@
-
-
 </body>
 <footer class="site-footer">
-	<?php require "nav.php"; ?>
+	<inner-column>
+		<?php require "nav.php"; ?>
+	</inner-column>
 </footer>
 </html>
