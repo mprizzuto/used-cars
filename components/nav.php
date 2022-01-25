@@ -2,8 +2,7 @@
 $navItems = [
 	"home" => "index.php",
 	"cars" => "?page=cars",
-	"car-detail" => "?page=car-detail",
-
+	"site-map" => "?page=site-map",
 ];
 ?>
 
