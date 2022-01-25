@@ -21,6 +21,10 @@ switch ($page) {
 		case "add-a-car":
 		include "pages/car-form.php";
 		break;
+
+		case "site-map":
+		include "pages/site-map.php";
+		break;
 	
 	default:
 		include "pages/default.php";
