@@ -5,6 +5,16 @@ function formatInput(mixed $input):void {
 	echo "</pre>";
 }
 
+// check for white space only
+function checkWhiteSpace(array $inputs):int {
+  foreach($inputs as $input => $string) {
+      if (ctype_space($string)) {
+          return 1;
+      }
+      return 0;
+  }
+}
+
 ?>
 
 <?php function createHead($title, $description) {?>
