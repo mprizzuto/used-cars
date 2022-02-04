@@ -4,7 +4,11 @@
 
 	<!-- 	<p><mark>coming soon</mark> submit your own car for sale!</p> -->
 
-	<form class="submit-used-car" method="POST" action="<?=htmlspecialchars("./pages/form-results.php")?>">
+	<?php 
+	//TODO... add query string to form action.. instead of sending directly to forms page
+	?>
+
+	<form class="submit-used-car" method="POST" action="<?=htmlspecialchars("?page=form-results")?>">
 		<label for="model">model
 			<input type="text" name="model" id="model">
 		</label>
