@@ -4,7 +4,7 @@
 
 	<!-- 	<p><mark>coming soon</mark> submit your own car for sale!</p> -->
 
-	<form class="submit-used-car">
+	<form class="submit-used-car" method="POST" action="<?=htmlspecialchars("./pages/form-results.php")?>">
 		<label for="model">model
 			<input type="text" name="model" id="model">
 		</label>
@@ -21,3 +21,4 @@
 	</form>
 	</inner-column>
 </section>
+
