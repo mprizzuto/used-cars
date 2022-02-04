@@ -15,16 +15,20 @@ switch ($page) {
 		break;
 
 		case "car-detail":
-		include "pages/car-detail.php";
-		break;
+			include "pages/car-detail.php";
+			break;
 
 		case "add-a-car":
-		include "pages/car-form.php";
-		break;
+			include "pages/car-form.php";
+			break;
 
 		case "site-map":
-		include "pages/site-map.php";
-		break;
+			include "pages/site-map.php";
+			break;
+
+		case "form-results":
+			include "./pages/form-results.php";
+			break;
 	
 	default:
 		include "pages/default.php";
