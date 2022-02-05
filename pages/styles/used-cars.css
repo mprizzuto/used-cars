@@ -4,6 +4,6 @@
 	flex-wrap: wrap;
 }
 
-.car-photos li + li {
+.car-photos li {
 	margin-top: 20px;
 }

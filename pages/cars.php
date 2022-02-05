@@ -1,4 +1,4 @@
-<section class="cars">
+<section class="used-cars">
 	<inner-column>
 		<h1>cars</h1>
 		<?php 
