@@ -5,13 +5,40 @@ function formatInput(mixed $input):void {
 	echo "</pre>";
 }
 
+//count numbers... https://www.alphacodingskills.com/php/pages/php-program-count-digits-in-a-integer.php
+function countDigits($MyNum){
+  $MyNum = (int)$MyNum;
+  $count = 0;
+
+  while($MyNum != 0){
+    $MyNum = (int)($MyNum / 10);
+    $count++;
+  }
+  return $count;
+}
+
+// function to calculate age of used car.. TODO. prevent erroneous values.. implement error handling
+function calculateCarAge(int $year):int {
+  $date = date("Y");
+  if ($year <= 0) {
+    return 0;
+  } 
+  elseif (countDigits($year) < 4 || countDigits($year) > 4 ) {
+     return "enter valid 4 digit year";
+  }
+  else {
+    // return $year - $date;
+    return $date - $year;
+  }
+}
+
 // check for white space only
 function checkWhiteSpace(array $inputs):int {
   foreach($inputs as $input => $string) {
-      if (ctype_space($string)) {
-          return 1;
-      }
-      return 0;
+    if (ctype_space($string)) {
+        return 1;
+    }
+    return 0;
   }
 }
 
