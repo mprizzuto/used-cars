@@ -1,0 +1,9 @@
+.car-photos {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.car-photos li {
+	margin-top: 20px;
+}
