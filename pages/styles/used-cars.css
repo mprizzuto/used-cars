@@ -3,3 +3,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+.car-photos li + li {
+	margin-top: 20px;
+}
