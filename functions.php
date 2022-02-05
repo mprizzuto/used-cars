@@ -55,23 +55,25 @@ function checkWhiteSpace(array $inputs):int {
 <?php }?>
 
 <?php function usedCarGenerator(string $model, string $year, string $color, array $photos, string $teaser) { ?>
-	<h2>model: <?=$model?></h2>
-	<ul class="car-assets">
-		<li>year: <?=$year?></li>
-		<li>the car age: <?=calculateCarAge($year)?> years</li>
-		<li>color:<?=$color?></li>
-		<li>
-			<ul class="car-photos">
-				<?php foreach($photos as $photo): ?>
-				<li>
-					<picture>
-						<img src="<?=$photo?>" alt="<?=$model?>">
-					</picture>
-				</li>
-				<?php endforeach; ?>
-			</ul>
-		</li>
-		<li><a href="?page=car-detail"><?=$teaser?></a></li>		
-	</ul>
+	<used-car>
+		<h2>model: <?=$model?></h2>
+		<ul class="car-assets">
+			<li>year: <?=$year?></li>
+			<li>the car age: <?=calculateCarAge($year)?> years</li>
+			<li>color:<?=$color?></li>
+			<li>
+				<ul class="car-photos">
+					<?php foreach($photos as $photo): ?>
+					<li>
+						<picture>
+							<img src="<?=$photo?>" alt="<?=$model?>">
+						</picture>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+			</li>
+			<li><a href="?page=car-detail&detail=<?=$model?>"><?=$teaser?></a></li>		
+		</ul>
+	</used-car>
 <?php } ?>
 
